@@ -1,0 +1,188 @@
+/* ClinicBook India - custom css written on top of bootstrap */
+/* some of this clashes a bit with bootstrap defaults on purpose, it grew over time */
+
+body {
+  background-color: #f4f6f9;
+  font-family: 'Segoe UI', Verdana, sans-serif;
+  color: #333;
+  /* not using bootstrap's font stack fully, we liked Segoe better */
+}
+
+.navbar-brand-clinic {
+  font-weight: 700;
+  color: #1a5f9e !important;
+  letter-spacing: -0.5px;
+}
+
+/* blue we picked in the first week, slightly off from bootstrap primary */
+.btn-clinic {
+  background-color: #1a5f9e;
+  color: #fff;
+  padding: 6px 14px;
+  border: none;
+}
+
+.btn-clinic:hover {
+  background-color: #14497a;
+  color: #fff;
+}
+
+/* token display box on dashboard */
+.token-box {
+  border: 2px solid #1a5f9e;
+  border-radius: 8px;
+  padding: 14px;
+  background: #eaf2fa;
+}
+
+.token-box .token-number {
+  font-size: 2.4rem;
+  font-weight: 700;
+  color: #1a5f9e;
+  line-height: 1;
+}
+
+/* cards look slightly different from bootstrap default on purpose */
+.card-clinic {
+  border: 1px solid #d4dde6;
+  border-radius: 6px;
+}
+
+.doctor-card-img {
+  height: 120px;
+  object-fit: cover;
+}
+
+/* GST invoice styling */
+.invoice-table td {
+  padding: 4px 8px;
+}
+
+.invoice-header {
+  background: #f0f4f8;
+  border-bottom: 2px solid #1a5f9e;
+  padding: 10px;
+}
+
+/* footer */
+.footer-clinic {
+  background: #22344a;
+  color: #cfd8e3;
+  padding: 18px 0;
+  margin-top: 40px;
+  font-size: 0.9rem;
+}
+
+.footer-clinic a {
+  color: #9fc3e8;
+}
+
+/* slot buttons */
+.slot-btn {
+  min-width: 92px;
+  margin: 3px;
+}
+
+.slot-taken {
+  text-decoration: line-through;
+  opacity: 0.55;
+}
+
+/* stat tiles for dashboard */
+.stat-tile {
+  background: #fff;
+  border: 1px solid #dde3ea;
+  border-radius: 6px;
+  padding: 12px 16px;
+}
+
+.stat-tile .stat-value {
+  font-size: 1.5rem;
+  font-weight: 700;
+  color: #16324f;
+}
+
+/* small helper classes we kept reusing */
+.text-fee {
+  color: #0b7a3e;
+  font-weight: 600;
+}
+
+.mt-odd {
+  margin-top: 18px; /* TODO: replace with bootstrap spacing someday */
+}
+
+.badge-walkin {
+  background-color: #8a6d3b;
+}
+
+.badge-appointment {
+  background-color: #2e6da4;
+}
+
+.lang-note {
+  font-size: 0.78rem;
+  color: #777;
+}
+
+/* queue table on doctor dashboard */
+.queue-row-now {
+  background: #fff3cd !important;
+}
+
+.queue-row-done {
+  background: #e9f7ef !important;
+  color: #6c757d;
+}
+
+/* hero section on homepage - was built in a hurry, kept as is */
+.hero-clinic {
+  background: #eaf2fa;
+  border: 1px solid #cfe0ef;
+  border-radius: 4px;
+  padding: 30px 24px;
+  margin-bottom: 24px;
+}
+
+.hero-clinic h1 {
+  color: #16324f;
+  font-weight: 700;
+  font-size: 1.9rem;
+}
+
+/* step circles for How it Works */
+.step-circle {
+  width: 34px;
+  height: 34px;
+  border-radius: 50%;
+  background: #1a5f9e;
+  color: #fff;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  font-weight: 700;
+  margin-right: 8px;
+}
+
+/* login page side panel */
+.login-side {
+  background: #eaf2fa;
+  padding: 20px;
+  border-radius: 6px;
+  border: 1px solid #cfe0ef;
+}
+
+/* small quirky detail - select boxes don't match input heights everywhere */
+.form-select-sm-clinic {
+  max-width: 130px;
+  display: inline-block;
+}
+
+@media (max-width: 768px) {
+  .hero-clinic {
+    padding: 20px 14px;
+  }
+  .hero-clinic h1 {
+    font-size: 1.5rem;
+  }
+}
