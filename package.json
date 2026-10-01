@@ -1,0 +1,15 @@
+{
+  "name": "clinicbook-india-monorepo",
+  "version": "1.0.0",
+  "description": "Healthcare Clinic Booking System (ClinicBook India) - MERN Stack",
+  "scripts": {
+    "install:backend": "cd backend && npm install",
+    "install:frontend": "cd frontend && npm install",
+    "install:all": "cd backend && npm install && cd ../frontend && npm install",
+    "seed": "cd backend && npm run seed",
+    "start:backend": "cd backend && npm start",
+    "start:frontend": "cd frontend && npm run dev"
+  },
+  "author": "ClinicBook India Team",
+  "license": "ISC"
+}
